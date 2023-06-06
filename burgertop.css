@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "KCC-Ganpan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+  font-family: "Nanum Gothic", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "KCC-Ganpan";
+}
+a {
+  text-decoration: none;
+  /* color: #000; */
+}
+
+main {
+  margin: 0;
+}
+
+/* menu-header */
+.menu-header {
+  background-color: #000;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 14px;
+  width: 100%;
+}
+
+.menu-header > .left > span > a {
+  color: #fff;
+}
+.menu-header > .left > span > i {
+  color: #fff;
+  /* font-size: 33px; */
+}
+.menu-header span {
+  margin-right: 10px;
+  color: #fff;
+}
+.menu-header > .left {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* <!-- main-img --> */
+
+/* <!-- main-img / img-box --> */
+.main-img .ad-img {
+  background: #130101 url(./img/adimg.png) no-repeat center / contain;
+  background-size: 1400px;
+  height: 390px;
+  display: flex;
+  justify-content: center;
+}
+.main-img .ad-img > .img-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-img .ad-img > .img-box > .text > h2 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.main-img .ad-img > .img-box > .text > p {
+  font-size: 22px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.main-img .ad-img > .img-box > .img > img {
+  width: 450px;
+}
+
+/* <!-- main-img / ad-button --> */
+.main-img > .ad-button {
+  height: 90px;
+  background: url(./img/ad-button-bg.png);
+  display: flex;
+  justify-content: center;
+}
+.main-img > .ad-button > .button-box {
+  width: 1200px;
+  /* height: 90px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ad-button > .button-box > .left {
+  margin: 0px;
+}
+.ad-button > .button-box > .left > a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.ad-button > .button-box > .left > a > img {
+  margin-right: 10px;
+}
+.ad-button > .button-box > .right {
+  margin: 0;
+  margin-right: 30px;
+}
+
+.ad-button > .button-box > .right > a > button {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 8px;
+  padding: 5px 30px;
+}
+.ad-button > .button-box > .right > a > button > span {
+  margin-left: 10px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-header {
+    display: none;
+  }
+  main {
+    background-color: #f2ebe6;
+  }
+  .main-img .ad-img {
+    background-size: 900px;
+    height: 250px;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .main-img .ad-img > .img-box > .text > h2 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .main-img .ad-img > .img-box > .text > p {
+    font-size: 12px;
+    font-weight: 100;
+  }
+
+  .main-img .ad-img > .img-box > .img > img {
+    width: 250px;
+  }
+
+  /* ad-button 영양성분 */
+  .main-img > .ad-button {
+    height: 40px;
+  }
+  .ad-button > .button-box {
+    padding: 0 15px;
+  }
+  .ad-button > .button-box > .left > a {
+    font-size: 1rem;
+  }
+  .ad-button > .button-box > .right {
+    margin-right: 0px;
+  }
+  .ad-button > .button-box > .right > a > button > p {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .ad-button > .button-box > .right > a > button {
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+  }
+  .ad-button > .button-box > .right > a > button > span {
+    margin-left: 0;
+    padding: 3px 6px;
+  }
+  .ad-button > .button-box > .right > a > button > span > img {
+    width: 15px;
+  }
+}
